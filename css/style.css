@@ -1115,13 +1115,14 @@ font-size: inherit;
 line-height: inherit;
 }
 a {
-color: #0074d9;
+color: #fff;
 text-decoration: none;
 }
 a:hover,
 a:focus {
-color: #004b8d;
-text-decoration: underline;
+color: #fff;
+text-decoration: none;
+/*text-decoration: underline;*/
 }
 a:focus {
 outline: thin dotted;
