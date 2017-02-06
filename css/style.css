@@ -23,7 +23,7 @@ video#bgvid {
 position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
 width: auto; height: auto; z-index: -1;
-background: url(http://www.imqq.com/video/3in1.jpg) no-repeat;
+background: url(http://s2.huoying666.com/main/1.jpg) no-repeat;
 background-size: cover; 
 }
 /*! MorFans Lab */
@@ -1118,11 +1118,21 @@ a {
 color: #fff;
 text-decoration: none;
 }
+.pro:hover,
+.pro :focus {
+color: #004b8d;
+text-decoration: underline;
+}
 a:hover,
-a:focus {
+a:focus{
 color: #fff;
 text-decoration: none;
-/*text-decoration: underline;*/
+}
+.gowebsite{
+  cursor: default;
+}
+.pro{
+  color: #0074d9;
 }
 a:focus {
 outline: thin dotted;
