@@ -8,7 +8,7 @@ background-image: linear-gradient(#feefae, #fae692);
 border-bottom: 1px solid #b3a569;
 }
 .unsupported-browser .container {
-background: url("http://7xp4cz.dl1.z0.glb.clouddn.com/ie-notice.png") no-repeat 0 5px;
+background: url("https://static.chainwon.cc/lab-cdn/img/ie-notice.png") no-repeat 0 5px;
 }
 .unsupported-browser p {
 padding-left: 48px;
@@ -23,9 +23,9 @@ video#bgvid {
 position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
 width: auto; height: auto; z-index: -1;
-background: url(http://s2.huoying666.com/main/1.jpg) no-repeat;
+background: url('https://static.chainwon.cc/lab-cdn/img/video-placeholder.jpg') no-repeat;
 background-size: cover; 
-filter: blur(30px);
+/* filter: blur(30px); */
 }
 /*! MorFans Lab */
 html {
