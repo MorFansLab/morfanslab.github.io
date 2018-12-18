@@ -9,7 +9,7 @@ scalable=no">
   <meta name="renderer" content="webkit">
   <meta name="Keywords" content="MorFans Lab,Lab MorFans,lab">
   <meta name="description" content="MorFans Lab是由魔帆博客(MorFans.cn)建立的一个原创开源项目索引，同时也会用于陈列一些好玩的闭源作品、收集的一些好玩的内容" />
-  <audio autoplay>
+  <audio id="starwarbgm">
       <source src="https://static.chainwon.cc/lab-cdn/audio/statwat_bg_au.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
   </audio>
@@ -32,48 +32,75 @@ scalable=no">
 </div>
 </div>
 <![endif]-->
-<div class="preview" id="preview" style="background:#000 url(https://static.chainwon.cc/lab-cdn/img/starwar_bg.jpg) ; background-repeat:repeat;height: 100%;">
+<div class="preview animinem" id="preview" style="background:#000 url(https://static.chainwon.cc/lab-cdn/img/starwar_bg.jpg) ; background-repeat:repeat;height: 100%;">
   <!--指示-->
-  <center><em style="color:rgba(255,255,255,0.3);font-size:12px;font-style:normal">点击任意位置进入首页！</em></center>
+  <div style="color:rgba(255,255,255,0.3);font-size:12px;text-align: center;line-height: normal;font-weight: normal"><em>点击任意位置进入首页</em></div>
   <!--跳过-->
   <script>
-    setTimeout("displaynone()",52000);
+    function show_tinfoAdisnone(){
+      swal("Poof! 开启传送门成功！", {
+        icon: "success",
+        button: "愿原力与你同在",
+        timer: 3000,
+      });
+      displaynone();  
+    }
     function displaynone() 
     {
-      // $(".preview").css('display','none'); 
       $('#preview').hide(0);
     }
-
     $(function ()
     {
+      var player = $("#starwarbgm")[0];    
+      $('.animinem').css("animation-play-state","paused");
+      var labinfo = document.createElement('div');
+      labinfo.innerHTML = "<p>MorFans Lab首页为何许久不修？MCT参议会为何会掀起骚动？</p><p>8102年Lab才上HTTPS究竟是何人所为？年末成功登上Https的背后又隐藏着什么？</p><p style='text-align: center;text-indent:0px'><b>让我们一起穿越银河，了解Lab背后不为人知的一面</b></p><p><small>[*]银河之旅带背景音乐，如果您设备音量过大，请注意调小</small></p>";
+      labinfo.style.color = "rgba(0,0,0,.64)";
+      labinfo.style.textIndent = "25px";
+      labinfo.style.textAlign = "left";
+      swal({
+          title: "欢迎来到 MorFans Lab",
+          content: labinfo,
+          icon: "warning",
+          html: true,
+          buttons: true,
+          dangerMode: true,
+          closeOnClickOutside:false,
+          buttons: ["直达首页", "开启银河之旅"],
+        })
+        .then((willgalaxy) => {
+          if (willgalaxy) {
+            player.play();
+            setTimeout(function(){$('.animinem').css("animation-play-state","running")},500);
+            setTimeout("displaynone()",52500);        
+          } else {
+            show_tinfoAdisnone();          
+          }
+        });
       $('.preview').on("click", function () {
         swal({
           title: "亲爱的绝地武士，等不及了？",
           text: "开启传送门，立即穿越银河直达【MorFans Lab】首页！",
-          icon: "warning",
+          icon: "info",
           buttons: true,
           dangerMode: true,
           buttons: ["不用!", "是的，启动传送门!"],
         })
         .then((willtransfer) => {
           if (willtransfer) {
-            swal("Poof! 开启传送门成功！", {
-            icon: "success",
-            button: "愿原力与你同在",
-            timer: 3000,
-            });
-            setTimeout("displaynone()",1);  
+            show_tinfoAdisnone();
+            player.pause(); 
           }
         });
               
       })
     });
   </script> 
-  <p id="start">A long time ago in a galaxy far,<br/> far away&hellip;</p>  
+  <p class="animinem" id="start">A long time ago in a galaxy far,<br/> far away&hellip;</p>  
   <!--title-->
-  <h1 class="star">STAR WARS<sub>- MorFans Lab -</sub></h1>  
+  <h1 class="star animinem">STAR WARS<sub>- MorFans Lab -</sub></h1>  
     <div id="titles">
-    <div id="titlecontent">  
+    <div class="animinem" id="titlecontent">  
       <!--subtitle-->
       <p class="center">MorFans Lab edition III<br /> 升级预告</p>  
       <!--article-->
@@ -132,9 +159,9 @@ scalable=no">
     </div>
   </div>
   <div class="section text-center" style="overflow: hidden;">
-    <video autoplay loop poster="https://static.chainwon.cc/lab-cdn/img/video-placeholder.jpg" id="bgvid" class="hidden-xs">
-      <!--<source src="http://s2.huoying666.com/main/demo.mov" type="video/webm">-->
-<source src="https://static.chainwon.cc/lab-cdn/img/f158fa456ccd251e_source.mp4" type="video/mp4">
+    <video muted autoplay loop poster="https://static.chainwon.cc/lab-cdn/img/video-placeholder.jpg" id="bgvid" class="hidden-xs">
+      <!-- <source src="http://s2.huoying666.com/main/demo.mov" type="video/webm"> -->
+<source src="https://static.chainwon.cc/lab-cdn/img/f158fa456ccd251e_source.mp4" type="video/webm">
       <!-- <source src="http://7vigs2.com1.z0.glb.clouddn.com/DaringInfantileDachshund2.mp4" type="video/mp4"> -->
     </video>
     <div class="container">
@@ -256,7 +283,7 @@ scalable=no">
       <div class="row">
         <div class="col-sm-6">
           <h1>MorFans Lab</h1>
-          <p>&copy; 2015 - 2019 MorFans Lab</p>
+          <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> MorFans Lab</p>
         </div>
         <div class="col-sm-6">
           <p class="text-info text-right">
