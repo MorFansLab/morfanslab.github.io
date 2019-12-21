@@ -10,14 +10,14 @@ scalable=no">
   <meta name="Keywords" content="MorFans Lab,Lab MorFans,lab">
   <meta name="description" content="MorFans Lab是由魔帆博客(MorFans.cn)建立的一个原创开源项目索引，同时也会用于陈列一些好玩的闭源作品、收集的一些好玩的内容" />
   <audio id="starwarbgm">
-      <source src="https://static.chainwon.cc/lab-cdn/audio/statwat_bg_au.mp3" type="audio/mpeg" />
+      <source src="https://wplab-static.morfans.cn/lab-cdn/audio/statwat_bg_au.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
   </audio>
   <!--SweetAlert Files-->
   <script src="https://cdn.bootcss.com/sweetalert/2.1.2/sweetalert.min.js"></script>
   <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
-  <link href="https://static.chainwon.cc/lab-cdn/css/style.min.css" rel="stylesheet" type="text/css">
-  <link href="https://static.chainwon.cc/lab-cdn/css/preview.min.css" rel="stylesheet" type="text/css">
+  <link href="https://wplab-static.morfans.cn/lab-cdn/css/style.min.css" rel="stylesheet" type="text/css">
+  <link href="https://wplab-static.morfans.cn/lab-cdn/css/preview.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -32,7 +32,7 @@ scalable=no">
 </div>
 </div>
 <![endif]-->
-<div class="preview animinem" id="preview" style="background:#000 url(https://static.chainwon.cc/lab-cdn/img/starwar_bg.jpg) ; background-repeat:repeat;height: 100%;">
+<div class="preview animinem" id="preview" style="background:#000 url(https://wplab-static.morfans.cn/lab-cdn/img/starwar_bg.jpg) ; background-repeat:repeat;height: 100%;">
   <!--指示-->
   <div style="color:rgba(255,255,255,0.3);font-size:12px;text-align: center;line-height: normal;font-weight: normal"><em>点击任意位置进入首页</em></div>
   <!--跳过-->
@@ -54,12 +54,12 @@ scalable=no">
       var player = $("#starwarbgm")[0];    
       $('.animinem').css("animation-play-state","paused");
       var labinfo = document.createElement('div');
-      labinfo.innerHTML = "<p>MorFans Lab首页为何许久不修？MCT参议会为何会掀起骚动？</p><p>8102年Lab才上HTTPS究竟是何人所为？年末成功登上Https的背后又隐藏着什么？</p><p style='text-align: center;text-indent:0px'><b>让我们一起穿越银河，了解Lab背后不为人知的一面</b></p><p><small>[*]银河之旅带背景音乐，如果您设备音量过大，请注意调小</small></p>";
+      labinfo.innerHTML = "<p>MorFans Lab首页为何许久不修？MCT参议会为何会掀起骚动？</p><p>8102年Lab才上HTTPS究竟是何人所为？年末成功登上Https的背后又隐藏着什么？</p><p style='text-align: center;text-indent:0px'><b>让我们一起穿越银河，了解 MorFans Lab 背后不为人知的一面</b></p><p><small>[*]银河之旅有背景音乐，如果设备音量过大，请注意调整以保正最佳观感</small></p><p><small>[*]银河之旅暂未对小屏设备进行特别优化，建议使用大屏设备</small></p>";
       labinfo.style.color = "rgba(0,0,0,.64)";
       labinfo.style.textIndent = "25px";
       labinfo.style.textAlign = "left";
       swal({
-          title: "欢迎来到 MorFans Lab",
+          title: "欢迎来访 MorFans Lab",
           content: labinfo,
           icon: "warning",
           html: true,
@@ -80,7 +80,7 @@ scalable=no">
       $('.preview').on("click", function () {
         swal({
           title: "亲爱的绝地武士，等不及了？",
-          text: "开启传送门，立即穿越银河直达【MorFans Lab】首页！",
+          text: "开启传送门，立即穿越银河直达【MorFans Lab】旧版首页！",
           icon: "info",
           buttons: true,
           dangerMode: true,
@@ -104,11 +104,11 @@ scalable=no">
       <!--subtitle-->
       <p class="center">MorFans Lab edition III<br /> 升级预告</p>  
       <!--article-->
-      <p style="text-indent : 1em">MorFans Lab 在8102年末费尽千辛万苦终于登上了 HTTPS，但是发现 Lab 的 CDN https的收费会贵一些，<br>家里有矿<s>泉水瓶子</s>的帕克斯显然不想继续支付较贵的流量费用，想再次改回 http ，于是 MCT参议会 掀起一场前所未有的骚动，数个成员纷纷表达不能换回 http 的意图。</p>
-      <p style="text-indent : 1em">就这样，究竟加不加 https 的这个话题在众多成员的带领下逐渐脱离了帕克斯的掌控，MCT参议会 的和平秩序面临失控。</p>
-      <p style="text-indent : 1em">正当 MCT参议会 就这一连串危机争论不休的时候，<a target="_blank" href="http://morfans.cn">MorFans 站长帕克斯</a>已秘密开始编写全新的 Lab 首页来解决冲突。</p>
-      <p style="text-indent : 1em">全新的 Lab 首页将采用 Material Design 作为主风格，但不完全遵守设计规范。主要解决旧 Lab 首页 设计风格过时的问题，顺便尝试一些之前没用过的“新”技术。</p>
-      <p style="text-indent : 1em">目前新的首页还鸽在帕克斯那，我们只是先提前预告下(逃)，相信不久的将来新版首页能够<s>在有生之年</s>推送到GayHub，解救处于水深火热中的Lab成员，并且使整个 MCT参议会 重获和平秩序&hellip;</p>
+      <p style="text-indent : 1em">Lab 在8102年末终于登上了HTTPS。但强而恶的玛门们让家里有矿<s>泉水瓶子</s>的帕克斯想再次回退，于是 MCT参议会 掀起一场前所未有的骚动，数个成员纷纷表达不能回退的意图。</p>
+      <p style="text-indent : 1em">就这样，HTTPS 话题在众多成员的带领下逐渐脱离了帕克斯的掌控，MCT参议会的和平秩序面临失控。</p>
+      <p style="text-indent : 1em">正当 MCT参议会 就这一连串危机争论不休的时候，<a target="_blank" href="http://morfans.cn">MorFans 站长帕克斯</a>已秘密开始编写全新的 Lab 来解决冲突。</p>
+      <p style="text-indent : 1em">但他败了。没能推送到 Github 解救水深火热中的Lab成员，并使整个参议会重获和平秩序。</p>
+      <p style="text-indent : 1.2em">9102年最后 Lab 终于没落，其不信者欢欣鼓舞。不过一切并没有失去，因为黑暗的灰烬中蹦出了一只巨大光辉的风帆，护住了最后的 MCT。Lab 即将重生，力量更甚强大。伴随着滚滚复仇之云，参议会指向不信者，MCT 将一往无前，无所不在。将会扩征暴增到上千倍之多，自这些教训中重获新的方向。无数嘈杂的键盘将会像风暴一样袭卷地球，不信者的房子将被夷为平地，他们自己将被烧为焦土，玛门的追随者将受到撼动&hellip;</p>
     </div>
   </div> 
 </div>
@@ -136,7 +136,7 @@ scalable=no">
     </div>
   </div>
   <div class="section" style="box-shadow:-5px -5px 30px #000 inset">
-    <div class="background-image" style="background-image : url('https://static.chainwon.cc/lab-cdn/img/titlebg.jpg');box-shadow:0 5px 30px #000"></div>
+    <div class="background-image" style="background-image : url('https://wplab-static.morfans.cn/lab-cdn/img/titlebg.jpg');box-shadow:0 5px 30px #000"></div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -149,7 +149,7 @@ scalable=no">
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <p class="text-left">Join the MorFans Lab, control the world.</p>
+                  <p class="text-left">Join the MorFans Lab, Change the world.</p>
                 </div>
               </div>
             </div>
@@ -159,9 +159,9 @@ scalable=no">
     </div>
   </div>
   <div class="section text-center" style="overflow: hidden;">
-    <video muted autoplay loop poster="https://static.chainwon.cc/lab-cdn/img/video-placeholder.jpg" id="bgvid" class="hidden-xs">
+    <video muted autoplay loop poster="https://wplab-static.morfans.cn/lab-cdn/img/video-placeholder.jpg" id="bgvid" class="hidden-xs">
       <!-- <source src="http://s2.huoying666.com/main/demo.mov" type="video/webm"> -->
-<source src="https://static.chainwon.cc/lab-cdn/img/f158fa456ccd251e_source.mp4" type="video/webm">
+<source src="https://wplab-static.morfans.cn/lab-cdn/img/f158fa456ccd251e_source.mp4" type="video/webm">
       <!-- <source src="http://7vigs2.com1.z0.glb.clouddn.com/DaringInfantileDachshund2.mp4" type="video/mp4"> -->
     </video>
     <div class="container">
@@ -174,57 +174,36 @@ scalable=no">
         <div class="col-md-12 text-left">
           <ul class="media-list">
             <li class="media">
-              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/EPL"><img class="media-object" src="https://static.chainwon.cc/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
+              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/EPL"><img class="media-object" src="https://wplab-static.morfans.cn/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
               <div class="media-body">
                 <h4 class="media-heading"><a class="pro" href="https://lab.morfans.cn/EPL/" target="_blank">易码再现</a></h4>
                 <p>不安装易语言，来阅读别人复制给你的E代码是非常困难的，易码再现，使易语言格式代码重生，轻松阅读。</p>
               </div>
             </li>
             <li class="media">
-              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/QMD/"><img class="media-object" src="https://static.chainwon.cc/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
-              <div class="media-body">
-                <h4 class="media-heading"><a class="pro" href="https://lab.morfans.cn/QMD/" target="_blank">进击的签名档</a></h4>
-                <p>在线生成“进击的”签名档，轻松快速</p>
-              </div>
-            </li>
-            <li class="media">
-              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/HTYS/"><img class="media-object" src="https://static.chainwon.cc/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
-              <div class="media-body">
-                <h4 class="media-heading"><a class="pro" href="https://lab.morfans.cn/HTYS/" target="_blank">魔帆听雨</a></h4>
-                <p>累了？倦了？来这里听听雨声放松吧！</p>
-              </div>
-            </li>
-            <li class="media">
-              <a class="pull-left" target="_blank" href="http://status.chainwon.cc/"><img class="media-object" src="https://static.chainwon.cc/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
+              <a class="pull-left" target="_blank" href="http://status.chainwon.cc/"><img class="media-object" src="https://wplab-static.morfans.cn/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
               <div class="media-body">
                 <h4 class="media-heading"><a class="pro" href="http://status.chainwon.cc/" target="_blank">状态监控</a></h4>
                 <p>实时监控我们服务器状态并展示。</p>
               </div>
             </li>
             <li class="media">
-              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/FinancialStatistics/"><img class="media-object" src="https://static.chainwon.cc/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
+              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/FinancialStatistics/"><img class="media-object" src="https://wplab-static.morfans.cn/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
               <div class="media-body">
                 <h4 class="media-heading"><a class="pro" href="https://lab.morfans.cn/FinancialStatistics/" target="_blank">Donate</a></h4>
                 <p>显示赞助我们的小伙伴们，并显示我们的费用支出。</p>
               </div>
             </li>
             <li class="media">
-              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/Let-s-Math/"><img class="media-object" src="https://static.chainwon.cc/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
+              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/Let-s-Math/"><img class="media-object" src="https://wplab-static.morfans.cn/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
               <div class="media-body">
                 <h4 class="media-heading"><a class="pro" href="https://lab.morfans.cn/Let-s-Math/" target="_blank">Let's Math</a></h4>
                 <p>一个快速、简约、易用的快速出题WebAPP。采用Material Design 设计,相信你会喜欢它！</p>
               </div>
             </li>
-            <li class="media">
-              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/carnival_js/"><img class="media-object" src="https://static.chainwon.cc/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
-              <div class="media-body">
-                <h4 class="media-heading"><a class="pro" href="https://lab.morfans.cn/carnival_js/" target="_blank">Carnival_js</a></h4>
-                <p>一个能让你的网站high起来的js</p>
-              </div>
-            </li>
             </li>
             <li class="media">
-              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/LiteWebChat_Frame"><img class="media-object" src="https://static.chainwon.cc/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
+              <a class="pull-left" target="_blank" href="https://lab.morfans.cn/LiteWebChat_Frame"><img class="media-object" src="https://wplab-static.morfans.cn/lab-cdn/img/item_Ico.png" height="64" width="64"></a>
               <div class="media-body">
                 <h4 class="media-heading"><a class="pro" href="https://lab.morfans.cn/LiteWebChat_Frame" target="_blank">Lite Web Chat Frame</a></h4>
                 <p>简洁而不简单，美观易用的 HTML 聊天界面框架</p>
@@ -269,7 +248,7 @@ scalable=no">
           <p class="text-left">业余编程coser</p>
         </div>
         <div class="col-md-2">
-          <a class="gowebsite" href="http://morfans.cn/archives/author/sonui" target="_blank"><img src="https://static.chainwon.cc/wp-content/uploads/2017/02/604d8989c276_avatar-80x80.png" class="img-circle img-responsive" height="100" width="100"></a>
+          <a class="gowebsite" href="http://morfans.cn/archives/author/sonui" target="_blank"><img src="https://wplab-static.morfans.cn/wp-content/uploads/2017/02/604d8989c276_avatar-80x80.png" class="img-circle img-responsive" height="100" width="100"></a>
         </div>
         <div class="col-md-4 text-center">
           <h3 class="text-left"><a class="gowebsite" href="http://morfans.cn/archives/author/sonui" target="_blank">super_东坡</a></h3>
